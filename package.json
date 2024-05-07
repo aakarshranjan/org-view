@@ -1,0 +1,29 @@
+{
+  "name": "org-view",
+  "version": "1.0.0",
+  "description": "Application to show all the Employee details and Organization hierarchy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakarshranjan/org-view.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aakarshranjan/org-view/issues"
+  },
+  "homepage": "https://github.com/aakarshranjan/org-view#readme",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1"
+  }
+}
