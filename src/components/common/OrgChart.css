@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.borderInc {
+  border: 4px solid black;
+}
+.tree ul {
+  display: table;
+  margin: 0 auto;
+}
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.tree li {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.tree li::before,
+.tree li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  height: 20px;
+}
+.tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+.tree li:only-child::after,
+.tree li:only-child::before {
+  display: none;
+}
+.tree li:only-child {
+  padding-top: 0;
+}
+.tree li:first-child::before,
+.tree li:last-child::after {
+  border: 0 none;
+}
+.tree li:last-child::before {
+  border-right: 1px solid #ccc;
+  border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+}
+.tree ul ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid #ccc;
+  width: 0;
+  height: 20px;
+}
+.tree li a {
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #666;
+  font-family: arial, verdana, tahoma;
+  font-size: 11px;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.tree li a:hover,
+.tree li a:hover + ul li a {
+  background: #4fc4f7;
+  color: white;
+  border: 1px solid #94a0b4;
+}
+.tree li a:hover + ul li::after,
+.tree li a:hover + ul li::before,
+.tree li a:hover + ul::before,
+.tree li a:hover + ul ul::before {
+  border-color: #94a0b4;
+}
+img {
+  image-orientation: from-image;
+}
+.leafLink {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 150px;
+  height: 120px;
+  justify-content: space-around;
+  align-items: center;
+}
+.node {
+  display: inline-block;
+  padding: 10px;
+}
+.leafBlock {
+  border-color: #bcc6d6;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
+}
+.profilePic {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+.currentUser {
+  background-color: #4fc4f7 !important;
+  color: white !important;
+  box-shadow: 0 16px 20px 0 rgba(22, 118, 226, 0.3),
+    0 6px 10px 0 rgba(22, 118, 226, 0.3) !important;
+}
